@@ -31,6 +31,7 @@ npm install grunt --save-dev
 npm install grunt-contrib-clean --save-dev
 npm install grunt-contrib-coffee --save-dev
 npm install grunt-contrib-copy --save-dev
+npm install grunt-shell --save-dev
 npm install grunt-text-replace --save-dev
 ```
 

@@ -3,7 +3,7 @@ grunt-template-node
 
 A grunt file templates for using grunt build node.js project.
 
-Current this tempaltes include these task:
+Current this templates include these task:
 
 * Remove files in output folder.
 * Compile coffee scripts.

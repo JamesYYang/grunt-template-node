@@ -17,9 +17,6 @@ initSystemTask = (grunt, gruntConfig)->
   port = grunt.option('port')
   port = 8001 unless port
 
-
-  includeNodeModules = grunt.option('includeNodeModules') is true
-
   globalParam =
     port: port
 
@@ -30,15 +27,6 @@ initSystemTask = (grunt, gruntConfig)->
   require('./task_start').initTask(grunt, gruntConfig, globalParam)
 
   grunt.registerTask('systemTask', ->
-    if includeNodeModules
-      grunt.task.run([
-        'clean:all'
-        'coffee'
-        'copy:all'
-        'replace:changePort'
-        'shell:start'
-      ])
-    else
       grunt.task.run([
         'clean:default'
         'coffee'

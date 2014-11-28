@@ -6,3 +6,5 @@ server = http.createServer (req, res)->
 
 server.listen "{port}"
 
+console.log "Service start..."
+
